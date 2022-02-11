@@ -1,0 +1,25 @@
+<odoo>
+    <record id="product_product_view_form_normal_mo" model="ir.ui.view">
+        <field name="name">product.product.view.form.normal.mo</field>
+        <field name="model">product.product</field>
+        <field name="priority">4</field>
+        <field name="inherit_id" ref="product.product_normal_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='description_sale']" position="replace">
+                <field name="so_pdf_note"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_product_ext_form_view_mo" model="ir.ui.view">
+        <field name="name">product_extended.product.form.view.mo</field>
+        <field name="model">product.template</field>
+        <field name="priority">3</field>
+        <field name="inherit_id" ref="product.product_template_only_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='description_sale']" position="replace">
+                <field name="so_pdf_note"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,18 @@
+<odoo>
+      <record id="project_project_view_form_mo" model="ir.ui.view">
+        <field name="name">project.form.mo</field>
+        <field name="model">project.project</field>
+        <field name="inherit_id" ref="project.edit_project"/>
+        <field name="arch" type="xml">
+            <div name="button_box" position="inside">
+                <button
+                    class="oe_stat_button"
+                    type="object"
+                    name="action_view_expenses"
+                    icon="fa-life-ring">
+                    <field name="expenses_sum" string="Expenses" widget="statinfo"/>
+                </button>
+            </div>
+        </field>
+   </record>
+</odoo>
