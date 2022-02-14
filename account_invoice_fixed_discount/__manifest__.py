@@ -13,6 +13,6 @@
     "installable": True,
     "depends": ["account"],
     "data": [
-        # "views/account_move_view.xml",
+             "views/account_move_view.xml",
              "reports/report_account_invoice.xml"],
 }
